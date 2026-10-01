@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes breathGlow {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.65;
+    box-shadow: 0 0 35px rgba(20, 184, 166, 0.25);
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.95;
+    box-shadow: 0 0 75px rgba(20, 184, 166, 0.55), 0 0 120px rgba(56, 189, 248, 0.3);
+  }
+}
+
+.animate-breath-glow {
+  animation: breathGlow 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Custom scrollbar for subtle dashboard feeds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.28);
+}

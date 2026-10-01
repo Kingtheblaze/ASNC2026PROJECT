@@ -1,0 +1,6 @@
+{
+  "name": "MaxxLoop - Closed-Loop AI Focus & Recovery Companion",
+  "description": "The closed-loop personal capacity management system for student focus and recovery, powered by robust MAD statistics, Thompson sampling, and causal inference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
